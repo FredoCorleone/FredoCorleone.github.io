@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<title>
+		Css Grid Practica2
+	</title>
+</head>
+	<header class="titulo">
+		<div class="icono-menu">
+		<img src="imagenes/menu.png" id="icono-menu"></img>
+		</div>
+		<h1>CSS<br><br></h1>
+	</header>
+<body>
+	<div class="contenedor">
+	<main class="contenido">
+		<article class="articulo">
+			<h1>¿Que es CSS?<br></h1>
+			<p>Lenguaje de programación para el diseño visual de páginas web.<br> 
+				Con el Cascading Style Sheets se puede determinar, por ejemplo,
+				 el tipo de letra, el tamaño o el color con el que mostrar los elementos HTML.<br>
+			</p>
+			<p><b>CSS Grid</b><br>
+				Grid es uno de los nuevos valores de HTML5 que podemos dar a la<br> propiedad display de un elemento, y que nos permite maquetar<br> las páginas web de una manera mucho más fácil que se hacía con<br> la forma tradicional.<br><br>
+				Con Grid hacemos que un elemento contenga la propiedad display:grid,<br> lo que nos permitirá maquetar de una forma mucho más fácil y potente<br> que con cualquier otro tipo de propiedades.<br>
+
+				Esto es así porque, al contrario que en otras formas de maquetación,<br> en Grid podemos establecer tanto las filas como las columnas que va<br> a tener el diseño, maquetación o layout, además no sólo en una dimensión,<br> como con Flexbox, sino que vamos a poder especificar la estructura<br> en dos dimensiones.<br>
+			</p><br>
+			<h3>Ejemplo de uso de Grid</h3>
+			<p>El siguiente ejemplo muestra un grid de 5 columnas con filas nuevas creadas con un minimo de 1000 px y un maximo automatico. Los elementos se han colodado en el grid utilizando posicionamiento en linea</p>
+			<br>
+			
+			<code>
+			&lt;div class="container"&gt;<br>
+			&lt;div class="grid1">cabecera &lt;/div&gt;<br>
+			&lt;div class="grid2">a lado &lt;/div&gt;<br>
+			&lt;div class="grid3">seccion &lt;/div&gt;<br>
+			&lt;div class="grid4">pie de pagina &lt;/div&gt;<br><br>
+
+
+			.container{<br>
+			display: grid;<br>
+			grid-template-columns: repeat(2, 1fr);<br>
+			column-gap: 5px;<br>
+			grid-auto-rows: minmax(100px, auto);<br>
+			align-items: stretch;<br>
+			grid-row-gap: 5px;<br>
+			}<br>
+			.grid1{<br>
+			grid-column: 1/4;<br>
+			grid-row: 1/3;<br>
+			}<br>
+			.grid2{<br>
+			grid-column: 1/2;<br>
+			grid-row: 3/5;<br>
+
+			}<br>
+			.grid3{<br>
+			grid-column: 2/4;<br>
+			grid-row: 3/5;<br>
+			}<br>
+			.grid4{<br>
+			grid-column: 1/4;<br>
+			grid-row: 5/7;<br>
+			}<br>
+
+			</code>
+		</article>
+	</main>
+	<div class="containeruno">
+		<figure>
+			<img src="imagenes/cssg.gif">
+			<div class="capa">
+				<h2>Css Selectors</h2>
+				<p>
+					CSS selectors are used to "find" (or select) the HTML elements you want to style.<br>
+					We can divide CSS selectors into five categories:<br>
+					
+				</p>
+			</div>
+		</figure>	
+
+		<figure>
+			<img src="imagenes/hexa.gif">
+			<div class="capa">
+				<h2>The Z-index property</h2>
+				<p>When elements are positioned, they can overlap other elements.
+					The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others).
+					An element can have a positive or negative stack order</p>
+			</div>
+		</figure>
+
+		<figure>
+			<img src="imagenes/cssg2.gif">
+			<div class="capa">
+				<h2>The display property</h2>
+				<p>The display property specifies if/how an element is displayed.
+					Every HTML element has a default display value depending on what type of element it is. The default display value for most elements is block or inline.</p>
+			</div>
+		</figure>
+	</div>
+	<div class="nav-bar">
+		<a href="https://www.facebook.com/" target="_blank"><img src="imagenes/logofb.png"></a>
+	
+		<a href="https://www.instagram.com/" target="_blank"><img src="imagenes/logoinsta.png"></a>
+	
+		<a href="https://twitter.com/" target="_blank"><img src="imagenes/logotw.png"></a>
+	</div>
+	<div class="bg"></div>
+	</div>
+
+	<div class="cont-menu active" id="menu">
+		<ul>
+			<img src="imagenes/Logo.png" width="350px" height="150px">
+			<a href="C:\xampp\htdocs\Introduccion a la computacion (mitchel)\Css Grid2\index2.html"><li>HTML</li></a>
+			<a href="C:\xampp\htdocs\Introduccion a la computacion (mitchel)\Css Grid2\index.html"><li>CSS</li></a>
+			<a href="C:\xampp\htdocs\Introduccion a la computacion (mitchel)\Css Grid2\index3.html"><li>Javascript</li>
+			<a href="C:\xampp\htdocs\Introduccion a la computacion (mitchel)\Css Grid2\index4.html"><li>Práctica final</li>
+		</ul>		
+	</div>
+<script src="animacion.js"></script>
+
+	<div class="container">
+		<div class="grid1">cabecera</div>
+		<div class="grid2">a lado</div>
+		<div class="grid3">seccion</div>
+		<div class="grid4">pie de pagina</div>
+	</div>
+
+</body>
+</html>
